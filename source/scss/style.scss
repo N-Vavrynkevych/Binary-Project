@@ -1,0 +1,409 @@
+
+@import "__nullstyle";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap');
+
+.wrapper {
+    font-family: Lato;
+
+    .header {
+        background: url('/bem/img/conteiner/photo_5384300440151244976_y.jfif');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        
+        .header__logo {
+            
+        }
+        .header__text {
+            max-width: 900px;
+            height: 70px;
+            color: #ffffff;
+            font-size: 34px;
+            line-height: 40px;
+            text-align: center;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                width: 15%;
+                bottom: -50px;
+                height: 2px;
+                left: 50%;
+                background-color: #ffffff;
+                margin: 0px 0px 0px -50px;
+            }
+            .header__title {
+                text-transform: uppercase;
+                font-weight: 900;
+                letter-spacing: 5.43px;
+            }
+            .header__subtitle {   
+                font-size: 26px;
+                font-weight: 400;
+                letter-spacing: 4.15px;
+            }
+            }
+        }
+        .button {
+                & a {
+                    color: #ffffff;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: center;
+                    text-transform: uppercase;
+                    max-width: 182px;
+                    height: 47px;
+                    padding: 16px 40px;
+                    border: 1px solid #ffffff;/* Style for "Shape" */    
+                .button__text  {
+                    letter-spacing: 0.67px;
+                    font-weight: 400;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+            }
+    
+        }
+    
+    }
+
+.navigation{
+    .nav__panel{
+        display: flex;
+        justify-content: center;
+        padding: 22px 0px 130px 0px;
+        text-transform: uppercase;
+        font-weight: 500;
+        .nav__panel__item{
+            margin: 0px 25px;
+            .nav__panel__link{
+                font-size: 15px;
+                color: #3c3c3c;
+                &:hover{
+                    color: #ada074;
+                }
+            }   
+        }
+    }
+}
+
+.about {
+    &__body {
+        max-width: 823px;
+        margin: 0px auto;
+    }
+    &__header {
+        margin: 0px 0px 65px 0px;
+    }
+    &__title {
+        margin: 0px 0px 30px 0px;
+    }
+    
+    &__text {
+        max-width: 688px;
+        color: #868585;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 25.89px;
+        text-align: center;
+        margin: 0px auto;
+    }
+    &__row {
+        display: flex;
+        margin: 0px -15px;
+        padding: 0px 0px 90px 0px;
+        
+    }
+    &__column {
+        flex: 0 0 33.333%;
+        padding: 0px 15px;
+    }
+}
+
+
+.title {
+
+    font-size: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5.43px;
+    position: relative;
+    text-align: center;
+    padding: 0px 0px 30px 0px;
+    &::after{
+        content:'';
+        position: absolute ;
+        min-width: 80px;
+        bottom: 0;
+        height: 1px;
+        left: 50%;
+        background-color: #000;
+        margin: 0px 0px 0px -35px;
+    }
+}
+
+.item-about { 
+    .item-about__icon{
+        max-width:92px;
+        height: 92px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        border: 2px solid #f3f3f3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    &__title {
+        color: #000000;
+        font-size: 22px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 3.52px;
+        margin: 40px 0px 35px 0px;
+    }
+    &__text {
+        text-align: center;
+        color: #868585;
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0px auto;
+    }
+}
+
+
+.block__portfolio {
+    background-color: #f3f3f3;
+    padding-top: 107px;
+    .portfolio__top {
+        .portfolio__title {
+        }
+        .navigation {
+        }
+        .nav__panel{
+            padding: 45px 0px 136px 0px;
+        }
+        .nav__panel__item {
+        }
+        .nav__panel__link {
+        }
+    }
+    .portfolio__foto {
+        max-width: 1103px;
+        max-height: 1125px;
+        margin: 0px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .portfolio__foto__item {
+            margin-bottom: 16px;
+        }
+    }
+    .portfolio__bottom{
+        display: flex;
+        justify-content: center;
+        padding: 81px 0px 80px 0px;
+        .button {
+            & a {
+                color: #000000;;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: center;
+                text-transform: uppercase;
+                max-width: 182px;
+                height: 47px;
+                padding: 17px 40px;
+                border: 1px solid #000000;
+            .button__text {
+                letter-spacing: 0.67px;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+}
+
+.block__partners {
+        background: url('../bem/img/Our partners/Новий проект.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100%;
+        height: 386px;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        flex-direction: column;
+        padding: 100px 0px;
+        margin: 0px 0px 180px 0px;
+            .partners__title {
+                height: 28px;
+                color: #ffffff;
+                font-size: 30px;
+                
+                text-align: center;
+                letter-spacing: 1.8px;
+            }
+            .partners__logo{
+                display: flex;
+                .partners__logo__item{
+                    margin: 0 55px;
+                }
+            }
+        
+}
+
+.block__contact {
+    .contact__conteiner {
+    }
+    .contact__title {
+    }
+    .title {
+    }
+        .contact__login{
+            display: flex;
+            max-width: 900px;
+            height: 291px;
+            margin: 119px 0px 0px 500px;
+            
+            p{
+                max-width: 100px;
+                height: 12px;
+                color: #000000;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.84px;
+            }
+            .contact__form{
+                padding-top: 10px;
+                max-width: 383px;
+                height: 297px;
+                justify-content: left;
+                    .contact__row{
+                        width: 382px;
+                        height: 69px;
+                        display: flex;
+                        .contact__table2{
+                            padding: 0px 83px 0px 60px;
+                        }
+                        .contact__item{
+                            max-width: 160px;
+                            height: 35px;
+                            background-color: #f8f7f7;
+                            border-top: #000 solid 1px;
+                        }
+                    }
+                    .contact__message{
+                        margin: 75px 0px 0px 0px;
+                        textarea{
+                            background-color: #f8f7f7;
+                            border-top: #000 solid 1px;
+                            width: 383px;
+                            height: 118px;
+                            padding-top: 5px;
+                        }
+                    }
+                    .contact__send{
+                        margin: 42px 0px 0px 0px;
+                        display: flex;
+                        justify-content: right;
+                        button{
+                            max-width: 40px;
+                            height: 11px;
+                            color: #000000;
+                            font-size: 14px;
+                            font-weight: 700;
+                            text-transform: uppercase;
+                            letter-spacing: 0.84px;
+                            background-color: #ffffff;
+                        }
+                    }
+            }
+            .contact__info {
+                padding: 0px 0px 0px 83px;
+                max-width: 350px;
+                height: 196px;
+                .contact__info__text {
+                    color: #000000;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    text-align: left;
+                    font-weight: 300;
+                    padding-bottom: 30px;
+                }
+                .contact__info__name {
+                    font-weight: 700;
+                    padding-bottom: 20px;
+                }
+                .contact__info__social {
+                }
+                .social {
+                }
+                .social__item {
+                    margin: 0px 20px 0px 0px;
+                }
+                .contact__info__email {
+                    padding-top: 15px;
+                }
+            }
+        }
+}
+
+.footer {
+        max-width: 1931px;
+        max-height: 274px;
+        background-color: #3c3c3c;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        flex-direction: column;
+        margin: 200px 0px 0px 0px;
+    .footer__logo {
+        margin: 48px 0px 0px 0px;
+        max-width: 122px;
+        height: 78px;
+    }
+    .navigation {
+    }
+    .div__panel {
+        display: flex;
+        justify-content: center;
+        padding: 41px 0px 34px 0px;
+        font-weight: 500;
+        max-width: 260px;
+    }
+    .div__panel__item {
+        margin: 0px 10px;
+    }
+    .nav__panel__link {
+        font-size: 15px;
+                color: #a4a4a4;;
+                &:hover{
+                    color: #ada074;
+                }
+    }
+    .footer__subtitle {
+        height: 13px;
+        color: #6c6c6c;
+        font-family: "Myriad Pro";
+        font-size: 14px;
+        margin: 0px 0px 49px 0px;
+    }
+}
+
+
+
+
+
+
+
+
